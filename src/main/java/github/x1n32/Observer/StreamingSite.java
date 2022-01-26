@@ -1,5 +1,14 @@
-package github.x1n32;
+package github.x1n32.Observer;
 
+
+/**Observer is a behavioral design pattern.
+ * It specifies communication between objects: observable and observers.
+ *  An observable is an object which notifies observers about the changes in its state.
+ * 
+ * In this example a Channel is an observable, and Subscriber is an observer.
+ * When a channel releases a new video, all the subscribers to it get notified.
+ * 
+ */
 public class StreamingSite {
 
     public static void main (String args[]){
@@ -24,6 +33,7 @@ public class StreamingSite {
          s3.subscribeChannel(streamBBC); 
          s4.subscribeChannel(streamBBC);
          s5.subscribeChannel(streamBBC);
+
 
          streamBBC.upload("Infinite Monkey Cage");
 
