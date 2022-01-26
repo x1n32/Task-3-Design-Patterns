@@ -5,12 +5,12 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>github.x1n32</groupId>
-  <artifactId>Task-1-Calculator</artifactId>
+  <artifactId>Task-3-Design-Patterns</artifactId>
   <version>1.0-SNAPSHOT</version>
 
-  <name>Task-1-Calculator</name>
+  <name>Task-3-Calculator</name>
   <!-- FIXME change it to the project's website -->
-  <url>http://www.example.com</url>
+  <url>https://github.com/x1n32/How-to-GitHub</url>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
