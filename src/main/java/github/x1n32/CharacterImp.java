@@ -1,6 +1,6 @@
 package github.x1n32;
 
-public class CharacterImp implements Character {
+public class CharacterImp implements Character { //implements the Character Interface. Can override the methods to do things.
 
     @Override
     public String job() {

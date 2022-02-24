@@ -1,14 +1,11 @@
 package github.x1n32;
 
 public class KnightWithSword extends KnightClass{
-    
 
-    public KnightWithSword(Character c) {
-        super(c);
-    }
-    
-
-    
+    public KnightWithSword(KnightClass knight)  {   //This extends the knight class and can override its methods
+        super(knight);
+    }  
+ 
 
     public String job() {
         return super.job() + decorateWithSword();
@@ -19,10 +16,4 @@ public class KnightWithSword extends KnightClass{
         return " with a sword!";
     }
 
-
-    public static void main (String[] arg){
-        Character tree1 = new KnightWithSword(new CharacterImp());
-
-          
-    }
 }

@@ -1,6 +1,6 @@
 package github.x1n32;
 
-public interface Character {
+public interface Character {  //Character Interface
     String job();
     int str(); 
     int mag(); 
