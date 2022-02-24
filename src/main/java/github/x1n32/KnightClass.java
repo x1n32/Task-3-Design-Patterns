@@ -4,13 +4,11 @@ package github.x1n32;
 public abstract class KnightClass implements Character { 
     //This is a 'character' Decorator. Like Character Imp, it takes Character and overrides the methods to do something new.
 
-    private KnightClass knight;
+    private Character knight;
 
-    public KnightClass(KnightClass knight)  {   //This has the ability to create more decorated objects.
+    public KnightClass(Character knight)  {   //This has the ability to create more decorated objects.
         this.knight=knight;  
     }  
-
-
 
 
     @Override
