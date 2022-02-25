@@ -9,29 +9,49 @@ import java.util.ArrayList;
  * Subscriber class is an observer
  */
 public class Channel {
-    private ArrayList<Subscriber> subs = new ArrayList<>(); 
+
+    private ArrayList<Subscriber> subs = new ArrayList<>();   
     String titlename;
 
-    //Method to add to the array list
+
+    /**
+     * Method to add to the array list
+     * @param sub
+     */
     public void subscribe(Subscriber sub){
         subs.add(sub);
     }
-    //Method to leave to array list
+
+    /**
+     * Method to leave to array list
+     * @param sub
+     */
     public void unsubscribe(Subscriber sub){
         subs.remove(sub);
     }
 
-    //Method to call/notify all objects of this class when called.
+    
+    /**
+     * Method to call/notify all objects of this class when called
+     */
     public void notifySubscibers(){
         for (Subscriber sub: subs){
             sub.update();
         }
     }
+
+    /**
+     * 'uploading' a video; calls notiffySubscribers
+     * @param title
+     */
     public void upload(String title ){
         this.titlename = title;
         notifySubscibers();
     }
 
+
+
+    
     /* 
     Another way of implementing this is to use PropertyChangeSupport, to notify a PropertyChangeListener when 
     something is changed. Similar to the code above. Where addPropertyChangeListener is equivalent to subscribe.

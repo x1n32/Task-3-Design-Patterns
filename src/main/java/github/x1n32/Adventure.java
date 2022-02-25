@@ -4,12 +4,17 @@ public class Adventure {
   
     public static void main(String args[]) {
         CharacterImp StarterCharacter = new CharacterImp();
+        StarterCharacter.details();
 
-        System.out.println(StarterCharacter.job());
+		Character decoratedKnight = new KnightWithSword(new CharacterImp());
+        decoratedKnight.details();
 
-        KnightClass BasicKnight = new KnightClass(StarterCharacter);
-        KnightClass SwordKnight =new KnightWithSword(BasicKnight); 
-    
+        Character speedyKnight = new KnightWithLightBoots(new CharacterImp());
+        speedyKnight.details();
+
+        Character speedyDecoratedKnight = new KnightWithSword(new KnightWithLightBoots(new CharacterImp()));
+        speedyDecoratedKnight.details();
+
 
     }
 }

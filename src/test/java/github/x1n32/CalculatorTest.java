@@ -1,3 +1,5 @@
+
+
 package github.x1n32;
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -12,7 +14,9 @@ import org.junit.jupiter.api.Test;
  *  Testing should be repeatable, self-verifying, runs simultaneouslt, and return the same results.
  * 
  */
-class CalculatorTest {
+
+/*
+ class CalculatorTest {
 	
 	private Calculator calculator;
 	
@@ -98,3 +102,4 @@ class CalculatorTest {
 	
 	
 }
+*/

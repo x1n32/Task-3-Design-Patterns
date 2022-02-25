@@ -1,8 +1,8 @@
 package github.x1n32;
 
-public class KnightWithSword extends KnightClass{
+public class KnightWithLightBoots extends KnightClass{
 
-    public KnightWithSword(Character knight)  {   
+    public KnightWithLightBoots(Character knight)  {   
         super(knight);  
     }  
 
@@ -10,29 +10,30 @@ public class KnightWithSword extends KnightClass{
         return super.job() + decorateWithSword();
     }
 
+
     @Override
     public int str() {
-        return super.str() + 10;
+        return super.str() ;
     }
     @Override
     public int def() {
-        return super.def() + 2;
+        return super.def() ;
     }
 
     @Override
     public int mag() {
         return super.mag();
     }
+
     @Override
     public int spd() {
-        return super.spd() -2;
+        return super.spd() + 10;
     }
-
 
     
 
     private String decorateWithSword() {
-        return " + sword ";
+        return " + light boots ";
     }
 
 }
