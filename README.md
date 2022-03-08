@@ -48,7 +48,7 @@ KnightWithLightBoots and KnightWith Sword stem from the basic Knight class, by t
 ===============================================================
 #Tasks:
 
-1. Look at the demo code provided in the folders to get familiar.
+1. Look at the demo code provided in the Decorator and Observer folders to get familiar.
 2. Create a KnightWithAShield.java class, that extends knightClass, that provides 10 extra defence, and returns " + shield " when the job function is called.
 3. Let's create a new Decorator class like Knight, this time, lets have a Wizard class. Create a "WizardDecorator.java" that extends Character. Set its base magic to 20. Create a String method called magicSpell().
 4. Get a friend to join your repository to create a "fireWizard.java" that extends WizardDecorator. Make magicSpell() output "Fireball!"
