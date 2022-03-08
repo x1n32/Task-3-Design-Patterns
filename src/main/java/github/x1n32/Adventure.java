@@ -1,7 +1,11 @@
 package github.x1n32;
 
 public class Adventure {
-  
+
+    /**
+     * Main method to test the decorators
+     * @param args
+     */
     public static void main(String args[]) {
         CharacterImp StarterCharacter = new CharacterImp();
         StarterCharacter.details();

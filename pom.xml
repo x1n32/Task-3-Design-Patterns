@@ -18,13 +18,14 @@
     <maven.compiler.target>11</maven.compiler.target>
   </properties>
 
+
   <dependencies>
-<!--    <dependency>
+    <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
-      <version>4.13.1</version>
+      <version>4.11</version>
       <scope>test</scope>
-    </dependency>-->
+    </dependency>
    <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api -->
    <dependency>
     <groupId>org.junit.jupiter</groupId>
@@ -32,6 +33,8 @@
     <version>5.8.2</version>
     <scope>test</scope>
   </dependency>
+  
+
   <dependency>
     <groupId>org.junit.jupiter</groupId>
     <artifactId>junit-jupiter-engine</artifactId>
@@ -39,6 +42,16 @@
     <scope>test</scope>
   </dependency>
   </dependencies>
+
+  <reporting>
+    <plugins>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-surefire-report-plugin</artifactId>
+            <version>3.0.0-M5</version>
+        </plugin>
+    </plugins>
+</reporting>
 
   <build>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
